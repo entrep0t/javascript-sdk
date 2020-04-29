@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      pre {
+        white-space: pre-wrap;
+        height: 300px;
+        background: rgb(236, 236, 236);
+        overflow: auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Entrepot usage example</h1>
+      <h4>Default</h4>
+      <div class="row">
+        <div class="col-6">
+          <pre><code>getProducts();</code></pre>
+        </div>
+        <div class="col-6">
+          <pre id="products"></pre>
+        </div>
+      </div>
+
+      <h4>Sorted</h4>
+      <div class="row">
+        <div class="col-6">
+          <pre><code>getProducts({ sort: 'createdAt:1' });</code></pre>
+        </div>
+        <div class="col-6">
+          <pre id="products-reverse"></pre>
+        </div>
+      </div>
+
+      <h4>Filtered</h4>
+      <div class="row">
+        <div class="col-6">
+          <pre><code>getProducts({ filter: 'categories:colliers,bracelets' });</code></pre>
+        </div>
+        <div class="col-6">
+          <pre id="products-filtered"></pre>
+        </div>
+      </div>
+
+      <h4>Single</h4>
+      <div class="row">
+        <div class="col-6">
+          <pre><code>getProduct('collier-lys');</code></pre>
+        </div>
+        <div class="col-6">
+          <pre id="products-single"></pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
