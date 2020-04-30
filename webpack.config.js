@@ -29,7 +29,7 @@ module.exports = {
   resolve: {
     extensions: ['.js'],
     alias: {
-      '@entrep0t/sdk': path.resolve('./lib'),
+      'entrepot-sdk': path.resolve('./lib'),
     },
   },
   module: {
