@@ -4,7 +4,9 @@ module.exports = {
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: [
     '/node_modules/',
+    '/tests/',
   ],
+  timers: 'real',
   transform: {
     '^.+\\.js$': 'babel-jest',
   },
