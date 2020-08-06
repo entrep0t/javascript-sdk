@@ -54,7 +54,7 @@
     "serve": "yarn clean && ./node_modules/.bin/webpack-dev-server --config ./webpack.config.js",
     "prepack": "yarn build && yarn test",
     "test": "./node_modules/.bin/jest",
-    "lint": "./node_modules/.bin/eslint --max-warnings=0 ."
+    "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {
     "@babel/runtime-corejs3": "7.9.6",

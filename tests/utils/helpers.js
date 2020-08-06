@@ -8,8 +8,8 @@ export const mockResponse = (body = {}, options = {}) => ({
       res[k.toLowerCase()] = v;
       return res;
     }, {}),
-    get: function(key) { return this._headers[key.toLowerCase()]; },
-    set: function(key, value) { this._headers[key.toLowerCase()] = value; },
+    get: function (key) { return this._headers[key.toLowerCase()]; },
+    set: function (key, value) { this._headers[key.toLowerCase()] = value; },
   },
 });
 

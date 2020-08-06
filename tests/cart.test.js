@@ -108,7 +108,7 @@ describe('cart.js', () => {
     };
 
     beforeEach(() => {
-      mockFetch(mockResponse(({ rawBody }) => {
+      mockFetch(mockResponse(() => {
         cart.coupons.push({ id: 'coupon', name: 'coupon', value: 500 });
 
         return { cart };
@@ -152,7 +152,7 @@ describe('cart.js', () => {
     };
 
     beforeEach(() => {
-      mockFetch(mockResponse(({ rawBody }) => {
+      mockFetch(mockResponse(() => {
         cart.shippingMethod = {
           id: 'method',
           name: 'USPS',

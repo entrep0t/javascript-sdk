@@ -162,9 +162,7 @@ describe('http.js', () => {
     });
 
     it('should throw an error when response content is not json', async () => {
-      mockFetch(mockResponse(
-        new Promise((resolve, reject) => JSON.parse('{'))
-      ));
+      mockFetch(mockResponse(new Promise(() => JSON.parse('{'))));
 
       let error;
       try {
