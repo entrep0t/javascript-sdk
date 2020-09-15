@@ -60,6 +60,6 @@
     "@babel/runtime-corejs3": "7.11.2",
     "core-js": "3.6.5",
     "js-cookie": "2.2.1",
-    "query-string": "6.13.1"
+    "query-string": "6.13.2"
   }
 }
