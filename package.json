@@ -44,7 +44,7 @@
     "webpack-dev-server": "3.11.0"
   },
   "optionalDependencies": {
-    "isomorphic-fetch": "2.2.1"
+    "isomorphic-fetch": "3.0.0"
   },
   "scripts": {
     "clean": "rm -rf ./dist || true",
