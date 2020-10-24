@@ -35,8 +35,11 @@ export const mockFetch = (
       request: { url, ...options },
       json: () => Promise.resolve(
         typeof response.body === 'function'
-          ? response
-            .body({ url, ...options, rawBody: JSON.parse(options.body) })
+          ? response.body({
+              url,
+              ...options,
+              rawBody: JSON.parse(options.body),
+            })
           : response.body
       ),
     });
