@@ -36,10 +36,10 @@ export const mockFetch = (
       json: () => Promise.resolve(
         typeof response.body === 'function'
           ? response.body({
-              url,
-              ...options,
-              rawBody: JSON.parse(options.body),
-            })
+            url,
+            ...options,
+            rawBody: JSON.parse(options.body),
+          })
           : response.body
       ),
     });
