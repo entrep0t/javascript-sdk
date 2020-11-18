@@ -37,7 +37,7 @@
     "rollup": "2.33.2",
     "rollup-plugin-terser": "7.0.2",
     "sinon": "9.2.1",
-    "webpack": "5.4.0",
+    "webpack": "5.5.1",
     "webpack-cli": "4.2.0",
     "webpack-dev-server": "3.11.0"
   },
