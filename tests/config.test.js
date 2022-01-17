@@ -13,6 +13,7 @@ describe('config.js', () => {
 
   it('should allow to call setConfig without any arg', () => {
     let error;
+
     try {
       setConfig();
     } catch (e) {

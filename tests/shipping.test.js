@@ -2,7 +2,6 @@ import {
   getShippingMethods,
 } from '../lib/shipping';
 import { setConfig } from '../lib/config';
-
 import { mockFetch, mockResponse } from './utils/helpers';
 
 describe('shipping.js', () => {

@@ -6,6 +6,7 @@ export const mockResponse = (body = {}, options = {}) => ({
   headers: {
     _headers: Object.entries(options.headers || {}).reduce((res, [k, v]) => {
       res[k.toLowerCase()] = v;
+
       return res;
     }, {}),
     get: function (key) { return this._headers[key.toLowerCase()]; },

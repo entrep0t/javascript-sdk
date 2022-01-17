@@ -2,7 +2,6 @@ import Cookies from 'js-cookie';
 
 import { request, requestWithRetry } from '../lib/http';
 import { setConfig, getConfig } from '../lib/config';
-
 import { mockFetch, mockResponse, unmockFetch } from './utils/helpers';
 
 describe('http.js', () => {
@@ -28,6 +27,7 @@ describe('http.js', () => {
       setConfig({ clientId: null });
 
       let error;
+
       try {
         await request({ url });
       } catch (e) {
@@ -44,6 +44,7 @@ describe('http.js', () => {
       }), { delay: 20 });
 
       let error;
+
       try {
         await request({ url, timeout: 10 });
       } catch (e) {
@@ -80,6 +81,7 @@ describe('http.js', () => {
       }), { networkError: true });
 
       let error;
+
       try {
         await request({
           url,
@@ -165,6 +167,7 @@ describe('http.js', () => {
       mockFetch(mockResponse(new Promise(() => JSON.parse('{'))));
 
       let error;
+
       try {
         await request({ url });
       } catch (e) {
@@ -178,6 +181,7 @@ describe('http.js', () => {
       mockFetch(mockResponse({}, { status: 400, statusText: 'Bad Request' }));
 
       let error;
+
       try {
         await request({ url });
       } catch (e) {
@@ -228,6 +232,7 @@ describe('http.js', () => {
       );
 
       let error;
+
       try {
         await requestWithRetry({ url });
       } catch (e) {
@@ -248,6 +253,7 @@ describe('http.js', () => {
       );
 
       let error;
+
       try {
         await requestWithRetry({ url });
       } catch (e) {

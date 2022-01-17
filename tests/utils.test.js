@@ -81,6 +81,7 @@ describe('utils.js', () => {
     it('should not throw an error if any given parameter is null or ' +
       'undefined', () => {
       let error;
+
       try {
         get();
       } catch (e) {

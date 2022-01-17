@@ -2,7 +2,6 @@ import Cookies from 'js-cookie';
 
 import { getOrder, confirmOrder } from '../lib/orders';
 import { setConfig, getConfig } from '../lib/config';
-
 import { mockFetch, mockResponse } from './utils/helpers';
 
 describe('orders.js', () => {
@@ -32,6 +31,7 @@ describe('orders.js', () => {
     beforeEach(() => {
       mockFetch(mockResponse(() => {
         order.status = 'paid';
+
         return { order };
       }));
     });

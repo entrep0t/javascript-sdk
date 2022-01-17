@@ -4,7 +4,6 @@ import {
   createPaymentIntent,
 } from '../lib/payments';
 import { setConfig } from '../lib/config';
-
 import { mockFetch, mockResponse } from './utils/helpers';
 
 describe('payments.js', () => {

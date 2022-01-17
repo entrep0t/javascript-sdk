@@ -2,7 +2,6 @@ import Cookies from 'js-cookie';
 
 import { authenticate, me, register } from '../lib/auth';
 import { setConfig, getConfig } from '../lib/config';
-
 import { mockFetch, mockResponse } from './utils/helpers';
 
 describe('auth.js', () => {

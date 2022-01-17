@@ -3,7 +3,6 @@ import {
   getProduct,
 } from '../lib/products';
 import { setConfig } from '../lib/config';
-
 import { mockFetch, mockResponse } from './utils/helpers';
 
 describe('products.js', () => {

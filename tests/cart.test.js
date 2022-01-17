@@ -10,7 +10,6 @@ import {
   setCartShipping,
 } from '../lib/cart';
 import { setConfig, getConfig } from '../lib/config';
-
 import { mockFetch, mockResponse } from './utils/helpers';
 
 describe('cart.js', () => {
@@ -47,6 +46,7 @@ describe('cart.js', () => {
     beforeEach(() => {
       mockFetch(mockResponse(({ rawBody }) => {
         cart.content[0].quantity += rawBody.quantity;
+
         return { cart };
       }));
     });
@@ -68,6 +68,7 @@ describe('cart.js', () => {
     beforeEach(() => {
       mockFetch(mockResponse(({ rawBody }) => {
         cart.content[0].quantity -= rawBody.quantity;
+
         return { cart };
       }));
     });

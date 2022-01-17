@@ -3,7 +3,6 @@ import {
   getCategory,
 } from '../lib/categories';
 import { setConfig } from '../lib/config';
-
 import { mockFetch, mockResponse } from './utils/helpers';
 
 describe('categories.js', () => {
