@@ -1,5 +1,6 @@
-const webpack = require('webpack');
 const path = require('path');
+
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -11,7 +12,6 @@ module.exports = {
   devServer: {
     open: true,
     hot: true,
-    contentBase: './dist',
     port: 62000,
     host: 'localhost',
     historyApiFallback: true,
