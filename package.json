@@ -13,12 +13,12 @@
   "esnext": "dist/entrepot.esm.js",
   "sideEffects": false,
   "devDependencies": {
-    "@babel/core": "7.16.7",
-    "@babel/eslint-parser": "7.16.5",
-    "@babel/eslint-plugin": "7.16.5",
-    "@babel/plugin-external-helpers": "7.16.7",
-    "@babel/plugin-transform-runtime": "7.16.8",
-    "@babel/preset-env": "7.16.8",
+    "@babel/core": "7.25.9",
+    "@babel/eslint-parser": "7.25.9",
+    "@babel/eslint-plugin": "7.25.9",
+    "@babel/plugin-external-helpers": "7.25.9",
+    "@babel/plugin-transform-runtime": "7.25.9",
+    "@babel/preset-env": "7.25.9",
     "@poool/eslint-config": "1.5.0",
     "@poool/eslint-plugin": "1.5.0",
     "@rollup/plugin-babel": "5.3.0",
@@ -57,7 +57,7 @@
     "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "7.16.8",
+    "@babel/runtime-corejs3": "7.25.9",
     "core-js": "3.20.3",
     "js-cookie": "3.0.1",
     "query-string": "7.1.0"
