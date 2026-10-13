@@ -13,7 +13,7 @@
   "esnext": "dist/entrepot.esm.js",
   "sideEffects": false,
   "devDependencies": {
-    "@babel/core": "7.16.7",
+    "@babel/core": "7.29.6",
     "@babel/eslint-parser": "7.16.5",
     "@babel/eslint-plugin": "7.16.5",
     "@babel/plugin-external-helpers": "7.16.7",
